@@ -8,6 +8,7 @@ int main()
 	using namespace Graph_lib;
 
 	Simple_window win(Point{100,100},600,400,"My Window");
+	win.wait_for_button();
 	//2
 	Axis xa(Axis::x,Point{20,310},270,10,"x axis");
 	win.attach(xa);
@@ -66,7 +67,7 @@ int main()
 	win.set_label("Canvas #9");
 	win.wait_for_button();
 	//9
-	Image ii(Point{100,80},"image.jpg");
+	Image ii(Point{100,80},"badge.jpg");
 	win.attach(ii);
 	win.set_label("Canvas #10");
 	win.wait_for_button();
