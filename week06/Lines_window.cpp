@@ -12,10 +12,10 @@ next_x{Point{x_max()-310,0},50,20,"next x:"},
 next_y{Point{x_max()-210,0},50,20,"next y:"},
 xy_out{Point{100,0},100,20,"current (x,y):"},
 color_menu{Point{x_max()-70,40},70,20,Menu::vertical,"color"},
-color_button{Point{x_max()-80,30},"color menu",
+color_button{Point{x_max()-80,30},50,20,"color",
 [](Address,Address pw){reference_to<Lines_window>(pw).cmenu_pressed();}},
 style_menu(Point{x_max()-70,120},70,20,Menu::vertical,"style"),
-style_button{Point{x_max()-80,50},"style menu",
+style_button{Point{x_max()-80,100},50,20,"style",
 [](Address,Address pw){reference_to<Lines_window>(pw).smenu_pressed();}}
 
 {
